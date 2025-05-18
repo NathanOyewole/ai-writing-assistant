@@ -21,7 +21,7 @@ A Next.js-based AI writing assistant that helps users generate content using Ope
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/NathanOyewole/ai-writing-assistant.git
 cd ai-writing-assistant
 ```
 
@@ -37,6 +37,10 @@ yarn install
 ```bash
 OPENAI_API_KEY=your_api_key_here
 ```
+
+4. Start the development server:
+```bash
+npm run dev
 
 First, run the development server:
 
