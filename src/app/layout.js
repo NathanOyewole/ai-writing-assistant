@@ -1,29 +1,23 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
   title: "AI Writing Assistant",
-  description: "A Next.js-based AI writing assistant that helps users generate content using OpenAI's GPT-3.5-turbo model. The application includes a fallback system for when the API is unavailable.",
+  description: "An AI-powered writing assistant built with Next.js",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={inter.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
