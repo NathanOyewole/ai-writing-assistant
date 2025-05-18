@@ -1,6 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Writing Assistant
+
+A Next.js-based AI writing assistant that helps users generate content using OpenAI's GPT-3.5-turbo model. The application includes a fallback system for when the API is unavailable.
+
+## Features
+
+- 🤖 AI-powered content generation
+- 💬 Clean and intuitive user interface
+- ⚡ Real-time response generation
+- 🛡️ Fallback system for API unavailability
+- 📱 Responsive design
+- 🔄 Error handling and loading states
+
+## Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+- OpenAI API key
 
 ## Getting Started
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd ai-writing-assistant
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file in the root directory and add your OpenAI API key:
+
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
 
 First, run the development server:
 
